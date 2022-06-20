@@ -1,0 +1,32 @@
+<body>
+  <div>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <label for="first-name">Username: </label>
+      <input
+        id="username"
+        type="text"
+        formControlName="username"
+        placeholder="Username"
+      />
+
+      <label for="last-name">Password: </label>
+      <input
+        id="password"
+        type="password"
+        formControlName="password"
+        placeholder="Password"
+      />
+      <div class="notice">
+        <small
+          *ngIf="profileForm.controls['password'].errors?.['required'] && clickLoginBtn"
+          >Password em falta</small
+        >
+        <small *ngIf="loginError">Login errado</small>
+      </div>
+      <div class="buttons">
+        <button type="submit" (click)="onSubmit()">LOGIN</button>
+        <button type="submit" (click)="onSignIn()">SIGN IN</button>
+      </div>
+    </form>
+  </div>
+</body>

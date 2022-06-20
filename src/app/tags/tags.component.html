@@ -1,0 +1,9 @@
+<div *ngIf="tags" class="tags-Pratos" [style.justifyContent]="justifyContent">
+  <a *ngFor="let tag of tags" routerLink="/tag/{{ tag.nome }}"
+    >{{ tag.nome }} ({{ tag.contagem }})</a
+  >
+</div>
+
+<div *ngIf="paginaPratosTags" class="tags-Pratos">
+  <a *ngFor="let tagname of paginaPratosTags">{{ tagname }}</a>
+</div>

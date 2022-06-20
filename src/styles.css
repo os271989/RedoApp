@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 21px;
+}
+
+a {
+  color: rgba(55, 49, 49, 0.983);
+  margin-right: 10px;
+  height: 25px;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  padding: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: red;
+  background-color: rgba(248, 221, 195, 0.589);
+  border-bottom: 5px solid red;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

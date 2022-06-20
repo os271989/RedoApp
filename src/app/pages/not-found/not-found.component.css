@@ -1,0 +1,27 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2.5rem;
+  font-weight: 800;
+  height: 15rem;
+}
+
+div a {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 164, 0.841);
+  opacity: 90%;
+  border-radius: 15px;
+  padding: 0.5rem;
+  margin: 2rem;
+  height: auto;
+}
+
+div a:hover {
+  border-bottom: none;
+  opacity: 100%;
+  transform: scale(97%);
+  color: rgb(247, 93, 93);
+}

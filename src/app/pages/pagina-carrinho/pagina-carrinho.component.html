@@ -1,0 +1,51 @@
+<app-not-found
+  [visible]="!carrinho || carrinho.items.length <= 0"
+  notFoundMessage="Nenhum Produto Encontrado!"
+  resetLinkText="Voltar Atrás"
+></app-not-found>
+<div *ngIf="carrinho && carrinho.items.length > 0" class="container">
+  <ul>
+    <li *ngFor="let itemCarrinho of carrinho.items">
+      <div>
+        <img
+          [src]="itemCarrinho.food.imageUrl"
+          [alt]="itemCarrinho.food.nome"
+        />
+      </div>
+      <div>
+        <a routerLink="/food/{{ itemCarrinho.food.id }}">
+          {{ itemCarrinho.food.nome }}
+        </a>
+      </div>
+      <div>
+        <select
+          #quantitySelect
+          (change)="alterarQuantidade(itemCarrinho, quantitySelect.value)"
+        >
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div>
+        {{ itemCarrinho.food.preco | currency: "EUR":true }}
+      </div>
+      <div>
+        <button class="removeButton" (click)="removerDoCarrinho(itemCarrinho)">
+          Remover Prato
+        </button>
+      </div>
+    </li>
+  </ul>
+  <div class="checkOut">
+    <div class="foodCount">
+      {{ carrinho.quantidadeTotal }}
+    </div>
+    <div class="totalValue">
+      {{ carrinho.valorTotal | currency: "EUR":true }}
+    </div>
+    <a routerLink="/checkout">Limpar Carrinho</a>
+  </div>
+</div>

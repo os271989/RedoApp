@@ -1,0 +1,7 @@
+import { Carrinho } from "./carrinho";
+
+export class Encomenda {
+  id!: number;
+  produtos!: Carrinho;
+  clienteID!: number;
+}

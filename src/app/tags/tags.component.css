@@ -1,0 +1,29 @@
+.tags-Pratos {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.tags-Pratos a {
+  font-size: 0.9rem;
+  font-weight: 900;
+  font-family: monospace;
+  padding: 7px;
+  text-decoration: none;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: rgba(165, 165, 165, 0.517);
+  color: rgb(0, 0, 167);
+  margin: 0.5rem 0.5rem 0.5rem 0.2rem;
+  cursor: pointer;
+  height: auto;
+}
+
+.tags-Pratos a:hover {
+  transform: scale(98%);
+  text-decoration: wavy;
+  border: 0 !important;
+}

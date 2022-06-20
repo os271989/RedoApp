@@ -1,0 +1,37 @@
+<p>products works!</p>
+
+<app-search></app-search>
+<app-tags></app-tags>
+<app-not-found [visible]="!foods || foods.length <= 0"></app-not-found>
+
+<ul class="alimentos">
+  <li *ngFor="let food of foods">
+    <a routerLink="/pratos/{{ food.id }}">
+      <img src="{{ food.imageUrl }}" alt="food images" />
+      <div class="content">
+        <div class="name">
+          {{ food.nome }}
+        </div>
+        <span class="favorito {{ food.favorito ? '' : 'not' }}">❤</span>
+        <!-- Definição do sistema de avaliação por estrelas-->
+        <div class="stars">
+          <star-rating
+            [value]="food.star"
+            [totalstars]="5"
+            checkedcolor="red"
+            uncheckedcolor="black"
+            size="22px"
+            [readonly]="true"
+          >
+          </star-rating>
+          <div class="product-footer">
+            <div class="fornecedor">
+              <span>{{ food.fornecedor }}</span>
+            </div>
+            <div class="price">{{ food.preco | currency: "EUR":true }}</div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,89 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25rem;
+  border: 1px rgb(118, 95, 95) solid;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.671);
+  padding: 0.5rem;
+}
+
+div label {
+  font-size: 1.5rem;
+  align-self: flex-start;
+  margin: 0.8rem;
+}
+
+div input {
+  margin: 0 5% 0 5%;
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border: 0.1rem solid rgb(7, 7, 7);
+  width: 90%;
+}
+
+div input::placeholder {
+  color: rgb(133, 133, 138);
+}
+
+div input:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+div input:focus {
+  border: 0.2 solid red;
+}
+
+.notice {
+  margin-bottom: 0.2rem;
+  width: 90%;
+  border: none;
+  color: red;
+  font-weight: 400;
+  margin-top: 1rem;
+  box-shadow: none;
+  font-size: 1.5rem;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  height: 10rem;
+}
+
+.buttons {
+  max-width: 95%;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  box-shadow: none;
+  height: 5rem;
+  column-gap: 4.5rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  color: white;
+  font-size: 1rem;
+  background-color: rgb(7, 0, 201);
+  padding: 0.8rem;
+  border-radius: 30px;
+  opacity: 90%;
+  margin-top: 0rem;
+  position: relative;
+  align-self: center;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 100%;
+  transform: scale(99%);
+}

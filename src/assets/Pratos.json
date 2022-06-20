@@ -1,0 +1,121 @@
+[
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "Arroz de Tamboril",
+    "star": 4.2,
+    "tags": ["Peixe", "Especialidade"],
+    "imageUrl": "assets/Imagens/Arroz-tamboril.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "Bacalhau-no-forno",
+    "star": 4.0,
+    "tags": ["Peixe", "Especialidade", "Bacalhau"],
+    "imageUrl": "assets/Imagens/Bacalhau-no-forno.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "Bacalhau_a_Bras",
+    "star": 3.5,
+    "tags": ["Peixe", "Bacalhau"],
+    "imageUrl": "assets/Imagens/Bacalhau_a_Bras.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "Baguete-atum-normal",
+    "star": 3,
+    "tags": ["Sandes", "Comida Rapida"],
+    "imageUrl": "assets/Imagens/Baguete-atum-normal.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "Baguete-atum-sementes",
+    "star": 3.2,
+    "tags": ["Sandes", "Comida Rapida"],
+    "imageUrl": "assets/Imagens/Baguete-atum-sementes.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "Bifana-no-pao",
+    "star": 4.5,
+    "tags": ["Sandes"],
+    "imageUrl": "assets/Imagens/Bifana-no-pao.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "bifes-com-cogumelos",
+    "star": 4.0,
+    "tags": ["Carne", "Dieta"],
+    "imageUrl": "assets/Imagens/bifes-com-cogumelos.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "cozido",
+    "star": 3.5,
+    "tags": ["Carne", "Especialidade", "Tradicional"],
+    "imageUrl": "assets/Imagens/cozido.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "papas",
+    "star": 4.7,
+    "tags": ["Sopa", "Tradicional"],
+    "imageUrl": "assets/Imagens/papas.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "Posta",
+    "star": 4.8,
+    "tags": ["Carne"],
+    "imageUrl": "assets/Imagens/Posta.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "rojoes",
+    "star": 5,
+    "tags": ["Carne", "Especialidade", "Tradicional"],
+    "imageUrl": "assets/Imagens/rojoes.jpg",
+    "fornecedor": "D.Camilo"
+  },
+
+  {
+    "id": 115,
+    "preco": 17.5,
+    "nome": "Vitela",
+    "star": 4.3,
+    "tags": ["Carne"],
+    "imageUrl": "assets/Imagens/Vitela.jpg",
+    "fornecedor": "D.Camilo"
+  }
+]

@@ -1,0 +1,10 @@
+<div>
+  <!-- Definir caixa de procura, texto por defeito, e change para procurar parte do nome -->
+  <input
+    type="text"
+    placeholder="Procure aqui o seu prato"
+    [(ngModel)]="searchItem"
+    (change)="search()"
+  />
+  <button (click)="search()">Procurar</button>
+</div>

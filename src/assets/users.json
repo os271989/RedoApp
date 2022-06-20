@@ -1,0 +1,85 @@
+[
+  {
+    "id": 1654,
+    "username": "Oscar123",
+    "password": "12345",
+    "fName": "Oscar",
+    "lName": "Araujo",
+    "adress": "Rua do Galho",
+    "cp": 4750,
+    "local": "Creixomil",
+    "district": "Braga",
+    "email": "oscar@gmail.com",
+    "encomendas": []
+  },
+
+  {
+    "id": 1244,
+    "username": "Rui",
+    "password": "12345",
+    "fName": "Rui",
+    "lName": "Lopes",
+    "adress": "Rua do continente",
+    "cp": 4750,
+    "local": "Vila frescainha S.Pedro",
+    "district": "Braga",
+    "email": "ruiLopes@gmail.com",
+    "encomendas": []
+  },
+
+  {
+    "id": 324,
+    "username": "Elson",
+    "password": "12345",
+    "fName": "Elson",
+    "lName": "Simoes",
+    "adress": "Rua do botelho",
+    "cp": 4950,
+    "local": "Tendinhas",
+    "district": "Braga",
+    "email": "elson@gmail.com",
+    "encomendas": []
+  },
+
+  {
+    "id": 97,
+    "username": "Sergio",
+    "password": "12345",
+    "fName": "Sergio",
+    "lName": "Rodrigues",
+    "adress": "Rua do Raio",
+    "cp": 4780,
+    "local": "Negreiros",
+    "district": "Porto",
+    "email": "sergio@gmail.com",
+    "encomendas": []
+  },
+
+  {
+    "id": 1004,
+    "username": "Jessica",
+    "password": "12345",
+    "fName": "Jessica",
+    "lName": "Costa",
+    "adress": "Rua da estrela",
+    "cp": 4755,
+    "local": "Figueiró",
+    "district": "Braga",
+    "email": "Jessica@gmail.com",
+    "encomendas": []
+  },
+
+  {
+    "id": 874,
+    "username": "Rafael",
+    "password": "12345",
+    "fName": "Rafael",
+    "lName": "Rodrigues",
+    "adress": "Rua do Galho",
+    "cp": 4750,
+    "local": "Sta-Eulalia",
+    "district": "Braga",
+    "email": "Rafael@gmail.com",
+    "encomendas": []
+  }
+]

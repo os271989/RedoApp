@@ -1,0 +1,74 @@
+.alimentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 1px;
+  gap: 2rem;
+}
+
+.alimentos li {
+  width: 30%;
+}
+
+.alimentos li a {
+  height: 90%;
+  width: 90%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 1rem 1rem 0 0;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  padding: 0;
+}
+
+.alimentos li a:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+
+.alimentos li a img {
+  object-fit: cover;
+  height: 14.5rem;
+}
+
+.content {
+  color: rgb(202, 29, 29);
+  background-color: white;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.favorito {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.2rem;
+  font-size: 1rem;
+}
+
+.favorito.not {
+  color: black;
+}
+
+.fornecedor {
+  color: gray;
+  text-decoration: underline;
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.stars {
+  margin-bottom: 0.5rem;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color: green;
+}

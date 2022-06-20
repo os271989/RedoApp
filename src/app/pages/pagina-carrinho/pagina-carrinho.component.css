@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  flex: 3 0;
+  justify-content: space-evenly;
+  border: 1px solid #ffbbbb;
+  border-radius: 1rem;
+  list-style: none;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid grey;
+}
+
+ul li:last-child {
+  border: none;
+}
+
+li img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+li div {
+  padding: 1rem;
+}
+
+li div a:hover {
+  border: 0;
+  background-color: white;
+  color: black;
+  cursor: default;
+}
+
+li div:not(:first-child) {
+  flex-basis: 18%;
+}
+
+li select {
+  width: 3rem;
+  outline: none;
+  padding: 0.3rem;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  font-size: 1.3rem;
+  font-weight: 100;
+  background-color: rgb(244, 244, 246);
+  border-radius: 5px;
+}
+
+li .removeButton {
+  color: black;
+  font-weight: 600;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.4rem !important;
+  background-color: #e72929;
+  opacity: 85%;
+  outline: none;
+}
+
+li .removeButton:hover {
+  opacity: 100%;
+  cursor: pointer;
+  transform: scale(98%);
+}
+
+.checkOut {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 3;
+  height: 17rem;
+  border: 1px solid #ffbbbb;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.checkOut > div {
+  font-size: 1.5rem;
+  margin: 1rem;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.foodCount {
+  margin-bottom: 1.5rem;
+}
+
+.foodCount::before {
+  content: "Count: ";
+  margin-bottom: 0.5rem;
+  color: grey;
+}
+
+.totalValue::before {
+  content: "Price: ";
+  margin-bottom: 0.5rem;
+  color: grey;
+}
+
+.checkOut a {
+  padding: 0.3rem;
+  color: white;
+  background: #e72929;
+  display: block;
+  height: 2.5rem;
+  width: 80%;
+  border-radius: 1rem;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.7;
+  justify-self: center;
+  justify-items: center;
+}
+
+.checkOut a:hover {
+  opacity: 1;
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+<header>
+  <div class="container">
+    <div class="pages">
+      <div id="routers">
+        <a href="#" routerLink="/" class="fa fa-home"> INICIO</a>
+      </div>
+      <div id="routers">
+        <a href="#" routerLink="products" class="fa fa-cutlery"> PRODUTOS</a>
+      </div>
+    </div>
+    <nav>
+      <ul class="items">
+        <li>
+          <a routerLink="userlogin" class="fa fa-user"> CONTA</a>
+        </li>
+        <li *ngIf="user" class="menu-container">
+          <a routerLink="/dashboard">MENU</a>
+          <div class="menu">
+            <a routerLink="/profile">Profile</a>
+            <a routerLink="/orders">Orders</a>
+            <a>Logout</a>
+          </div>
+        </li>
+        <li class="carrinho">
+          <a
+            href="#"
+            routerLink="pagina-carrinho"
+            class="fa fa-cart-arrow-down"
+          >
+            Carrinho <span>{{ quantidadeCarrinho }}</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

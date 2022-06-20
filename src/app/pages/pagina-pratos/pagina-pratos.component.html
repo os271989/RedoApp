@@ -1,0 +1,36 @@
+<app-not-found
+  [visible]="!food"
+  notFoundMessage="Produto Não Encontrado"
+  resetLinkText="Volte ao Inicio"
+></app-not-found>
+<div *ngIf="food" class="container">
+  <img [src]="food.imageUrl" [alt]="food.nome" />
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{ food.nome }}
+      </span>
+      <span class="favorito {{ food.favorito ? '' : 'not' }}">❤</span>
+    </div>
+    <star-rating
+      [value]="food.star"
+      [totalstars]="5"
+      checkedcolor="red"
+      uncheckedcolor="black"
+      size="22px"
+      [readonly]="true"
+    >
+    </star-rating>
+    <div class="fornecedor">
+      <span>{{ food.fornecedor }}</span>
+    </div>
+    <div class="tag">
+      <app-tags
+        [paginaPratosTags]="food.tags"
+        justifyContent="start"
+      ></app-tags>
+    </div>
+    <div class="preco">{{ food.preco | currency: "EUR":true }}</div>
+    <button (click)="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+  </div>
+</div>
